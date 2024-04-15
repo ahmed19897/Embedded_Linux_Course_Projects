@@ -1,0 +1,7 @@
+prog.cpp: In function ‘int main()’:
+prog.cpp:3:10: error: expected ‘}’ at end of input
+    3 | return 0;
+      |          ^
+prog.cpp:2:1: note: to match this ‘{’
+    2 | {
+      | ^
