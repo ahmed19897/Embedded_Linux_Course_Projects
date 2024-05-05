@@ -90,8 +90,7 @@
         "stdfloat": "cpp",
         "syncstream": "cpp",
         "typeindex": "cpp",
-        "valarray": "cpp",
-        "cfloat": "cpp"
+        "valarray": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled",
     "python.autoComplete.extraPaths": [
