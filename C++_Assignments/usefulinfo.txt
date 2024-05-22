@@ -1,1 +1,4 @@
 dynamic cast to cast the pointer of a parent class to a child class and if the casting is successful it means the pointer of the parnt class was pointing to the child class that we were casting to
+
+
+struct access level is public by default while class is private by default
