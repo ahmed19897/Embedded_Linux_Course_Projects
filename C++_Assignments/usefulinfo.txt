@@ -2,3 +2,7 @@ dynamic cast to cast the pointer of a parent class to a child class and if the c
 
 
 struct access level is public by default while class is private by default
+
+
+String str("ABC") -> lvalue  //use normal reference to capture the value
+String("DEF")     -> rvalue //use movesemantics to capture the value
