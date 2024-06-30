@@ -1,9 +1,0 @@
-/home/ahmedosama9714/Desktop/EmbeddedLinux/Embedded_Linux_Course_Assignment/C++_Assignments/Weather/QT/Weather/build/Desktop_Qt_6_7_1-Debug/CMakeFiles/Weather.dir
-/home/ahmedosama9714/Desktop/EmbeddedLinux/Embedded_Linux_Course_Assignment/C++_Assignments/Weather/QT/Weather/build/Desktop_Qt_6_7_1-Debug/CMakeFiles/edit_cache.dir
-/home/ahmedosama9714/Desktop/EmbeddedLinux/Embedded_Linux_Course_Assignment/C++_Assignments/Weather/QT/Weather/build/Desktop_Qt_6_7_1-Debug/CMakeFiles/rebuild_cache.dir
-/home/ahmedosama9714/Desktop/EmbeddedLinux/Embedded_Linux_Course_Assignment/C++_Assignments/Weather/QT/Weather/build/Desktop_Qt_6_7_1-Debug/CMakeFiles/list_install_components.dir
-/home/ahmedosama9714/Desktop/EmbeddedLinux/Embedded_Linux_Course_Assignment/C++_Assignments/Weather/QT/Weather/build/Desktop_Qt_6_7_1-Debug/CMakeFiles/install.dir
-/home/ahmedosama9714/Desktop/EmbeddedLinux/Embedded_Linux_Course_Assignment/C++_Assignments/Weather/QT/Weather/build/Desktop_Qt_6_7_1-Debug/CMakeFiles/install/local.dir
-/home/ahmedosama9714/Desktop/EmbeddedLinux/Embedded_Linux_Course_Assignment/C++_Assignments/Weather/QT/Weather/build/Desktop_Qt_6_7_1-Debug/CMakeFiles/install/strip.dir
-/home/ahmedosama9714/Desktop/EmbeddedLinux/Embedded_Linux_Course_Assignment/C++_Assignments/Weather/QT/Weather/build/Desktop_Qt_6_7_1-Debug/CMakeFiles/Weather_autogen_timestamp_deps.dir
-/home/ahmedosama9714/Desktop/EmbeddedLinux/Embedded_Linux_Course_Assignment/C++_Assignments/Weather/QT/Weather/build/Desktop_Qt_6_7_1-Debug/CMakeFiles/Weather_autogen.dir

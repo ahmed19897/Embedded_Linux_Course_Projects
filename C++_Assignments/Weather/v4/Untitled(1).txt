@@ -1,0 +1,60 @@
+title Weather Application
+actor user
+
+
+participant MainWindow
+
+participant On_WeatherButton_clicked()
+participant Getcity()
+
+participant Mycurlmanager
+
+participant MyJsonManager
+
+participant ApplicationConsole
+
+
+activate user
+user->MainWindow:WeatherButton clicked
+activate MainWindow
+MainWindow->On_WeatherButton_clicked():WeatherButton Clicked Event()
+activate On_WeatherButton_clicked()
+On_WeatherButton_clicked()->Getcity():Getcity()
+
+activate Getcity()
+On_WeatherButton_clicked()<--Getcity():City name
+deactivate Getcity()
+On_WeatherButton_clicked()->Mycurlmanager:ChangeCity(City name)
+activate Mycurlmanager
+deactivate Mycurlmanager
+activate Mycurlmanager
+space
+On_WeatherButton_clicked()->MyJsonManager:ParseandSave(MycurlManager.GetResponse())
+activate MyJsonManager
+deactivate Mycurlmanager
+activate Mycurlmanager
+deactivate Mycurlmanager
+activate Mycurlmanager
+Mycurlmanager<-MyJsonManager:MyCurlManager.GetResponse()
+
+deactivate Mycurlmanager
+activate Mycurlmanager
+deactivate Mycurlmanager
+activate Mycurlmanager
+Mycurlmanager-->MyJsonManager:Reponse
+deactivate Mycurlmanager
+alt Check if parsed Ok
+case 1
+On_WeatherButton_clicked()<--MyJsonManager:Write City Name on UI to show
+On_WeatherButton_clicked()<--MyJsonManager:Write Temp on UI to show
+On_WeatherButton_clicked()<--MyJsonManager:Write Description on UI to show
+else 
+case 2
+ApplicationConsole <--MyJsonManager:Failed to parse JSON response
+end
+
+deactivate MyJsonManager
+user<-MainWindow:Weather Data Displayed
+MainWindow<--On_WeatherButton_clicked():Display_event()
+deactivate MainWindow
+deactivate On_WeatherButton_clicked()
