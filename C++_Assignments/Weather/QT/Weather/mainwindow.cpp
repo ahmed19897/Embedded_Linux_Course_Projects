@@ -5,6 +5,8 @@
 #include <sstream>
 #include <jsoncpp/json/json.h>
 #include "jsonmanager.h"
+#include <ctime>
+#include "cachemanager.h"
 
 MainWindow::MainWindow(std::shared_ptr<IAPI> APIObjectReference,QWidget *parent)
     : QMainWindow(parent)
@@ -23,12 +25,32 @@ MainWindow::~MainWindow()
 void MainWindow::on_WeatherButton_clicked()
 {
     static JsonManager MyJsonManager;
+    static CacheManager Cache;
+    static time_t curr_time=time(0);
+    static tm *tm_local = localtime(&curr_time);
+    static constexpr int APICallThreshold=1;
+    static int currenttime=tm_local->tm_hour;
+    static int lastAPIcallTime=tm_local->tm_hour-APICallThreshold;
+    static QString LastCity;
+
 
     QString QCity=Getcity();
     std::string Current_City=QCity.toStdString();
     MyCurlManager.ChangeCity(Current_City);
-    MyJsonManager.parseandsave(MyCurlManager.GetResponse());
-
+    if(currenttime>=lastAPIcallTime+APICallThreshold || (LastCity.compare(QCity)))//do a new call as long as the last call was 1 hour ago or longer
+    {
+        //do a new API call
+        Cache.WriteCache(MyCurlManager.GetResponse());
+        //save the last time we did the call
+        tm_local = localtime(&curr_time);
+        lastAPIcallTime=tm_local->tm_hour;
+        LastCity=QCity;
+    }
+    else
+    {
+        //get the cashed value
+    }
+    MyJsonManager.parseandsave(Cache.GetCache());
 
     // Display the weather information
     QString cityQ=QString::fromStdString(MyJsonManager.GetCity());

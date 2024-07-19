@@ -16,7 +16,7 @@ public:
     JsonManager(){};
     ~JsonManager(){};
 
-    void parseandsave(std::string response)
+    void parseandsave(std::string&& response)
     {
         success = reader.parse(response, root);
         if (success)

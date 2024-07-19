@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-563a94b8cae7113ab99f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Weather",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Weather::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Weather-Debug-a3b200ccedd32114eafb.json",
+					"name" : "Weather",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Weather_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Weather_autogen-Debug-e895179ed77ad335bcde.json",
+					"name" : "Weather_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Weather_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Weather_autogen_timestamp_deps-Debug-82bfd2696485130bfa8e.json",
+					"name" : "Weather_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/ahmedosama9714/Desktop/EmbeddedLinux/Embedded_Linux_Course_Assignment/C++_Assignments/Weather/v4/QT/Weather/build/Desktop_Qt_6_7_1-Debug",
+		"source" : "/home/ahmedosama9714/Desktop/EmbeddedLinux/Embedded_Linux_Course_Assignment/C++_Assignments/Weather/QT/Weather"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

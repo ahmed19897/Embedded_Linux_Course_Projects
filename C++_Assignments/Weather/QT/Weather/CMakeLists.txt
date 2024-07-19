@@ -29,6 +29,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         WethearAPI.cpp
         jsonmanager.h jsonmanager.h
         iapi.h iapi.h
+        cachemanager.h cachemanager.h
 
     )
 # Define target properties for Android with Qt 6 as:
