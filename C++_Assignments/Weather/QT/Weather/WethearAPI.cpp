@@ -38,3 +38,18 @@ void WethearAPI::ChangeCity(std::string&newcity)
     int indexend=url.find(",");
     url.replace(indexstart,(indexend-indexstart),newcity);
 }
+void WethearAPI::ChangeUnits(int newunit)
+{
+
+    int indexstart=url.find("units=");
+    indexstart=indexstart+6;
+    int indexend=url.find("&appid");
+    if(newunit==0)
+    {
+       url.replace(indexstart,(indexend-indexstart),"metric");
+    }
+    else
+    {
+        url.replace(indexstart,(indexend-indexstart),"imperial");
+    }
+}

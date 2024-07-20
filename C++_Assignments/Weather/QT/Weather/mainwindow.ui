@@ -17,8 +17,8 @@
    <widget class="QPushButton" name="WeatherButton">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>30</y>
+      <x>90</x>
+      <y>80</y>
       <width>231</width>
       <height>91</height>
      </rect>
@@ -54,8 +54,8 @@
    <widget class="QComboBox" name="CityList">
     <property name="geometry">
      <rect>
-      <x>280</x>
-      <y>60</y>
+      <x>340</x>
+      <y>100</y>
       <width>181</width>
       <height>24</height>
      </rect>
@@ -78,6 +78,26 @@
     <item>
      <property name="text">
       <string>Hurgada</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QComboBox" name="CityList_2">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>130</y>
+      <width>181</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>Celsius</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Fahrenheit</string>
      </property>
     </item>
    </widget>

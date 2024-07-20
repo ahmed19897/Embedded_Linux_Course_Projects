@@ -14,6 +14,7 @@ MainWindow::MainWindow(std::shared_ptr<IAPI> APIObjectReference,QWidget *parent)
 {
     ui->setupUi(this);
     City="Giza";
+    unitindex=0;
     MyCurlManager.SetAPIObject(APIObjectReference);
 }
 
@@ -32,12 +33,14 @@ void MainWindow::on_WeatherButton_clicked()
     static int currenttime=tm_local->tm_hour;
     static int lastAPIcallTime=tm_local->tm_hour-APICallThreshold;
     static QString LastCity;
+    static int LastUnit;
 
 
     QString QCity=Getcity();
     std::string Current_City=QCity.toStdString();
     MyCurlManager.ChangeCity(Current_City);
-    if(currenttime>=lastAPIcallTime+APICallThreshold || (LastCity.compare(QCity)))//do a new call as long as the last call was 1 hour ago or longer
+    MyCurlManager.ChangeUnits(unitindex);
+    if(currenttime>=lastAPIcallTime+APICallThreshold || (LastCity.compare(QCity)) || LastUnit!=unitindex )//do a new call as long as the last call was 1 hour ago or longer
     {
         //do a new API call
         Cache.WriteCache(MyCurlManager.GetResponse());
@@ -45,6 +48,7 @@ void MainWindow::on_WeatherButton_clicked()
         tm_local = localtime(&curr_time);
         lastAPIcallTime=tm_local->tm_hour;
         LastCity=QCity;
+        LastUnit=unitindex;
     }
     else
     {
@@ -75,3 +79,7 @@ void MainWindow::on_CityList_currentTextChanged(const QString &arg1)
     City=t;
 }
 
+void MainWindow::on_CityList_2_currentIndexChanged(int index)
+{
+    unitindex=index;
+}

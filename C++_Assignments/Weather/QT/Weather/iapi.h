@@ -10,7 +10,7 @@ public:
     virtual void SetUrl       (void)=0;
     virtual std::string GetUrl(void)=0;
     virtual void ChangeCity   (std::string&)=0;
-
+    virtual void ChangeUnits  (int newunit)=0;
 private:
 };
 #endif

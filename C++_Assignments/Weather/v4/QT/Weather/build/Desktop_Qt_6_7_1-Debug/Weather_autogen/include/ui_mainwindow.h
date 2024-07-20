@@ -32,6 +32,7 @@ public:
     QTextEdit *textEdit2;
     QTextEdit *textEdit3;
     QComboBox *CityList;
+    QComboBox *CityList_2;
     QStatusBar *statusbar;
 
     void setupUi(QMainWindow *MainWindow)
@@ -43,7 +44,7 @@ public:
         centralwidget->setObjectName("centralwidget");
         WeatherButton = new QPushButton(centralwidget);
         WeatherButton->setObjectName("WeatherButton");
-        WeatherButton->setGeometry(QRect(30, 30, 231, 91));
+        WeatherButton->setGeometry(QRect(90, 80, 231, 91));
         WeatherButton->setAutoFillBackground(true);
         layoutWidget = new QWidget(centralwidget);
         layoutWidget->setObjectName("layoutWidget");
@@ -72,7 +73,12 @@ public:
         CityList->addItem(QString());
         CityList->addItem(QString());
         CityList->setObjectName("CityList");
-        CityList->setGeometry(QRect(280, 60, 181, 24));
+        CityList->setGeometry(QRect(340, 100, 181, 24));
+        CityList_2 = new QComboBox(centralwidget);
+        CityList_2->addItem(QString());
+        CityList_2->addItem(QString());
+        CityList_2->setObjectName("CityList_2");
+        CityList_2->setGeometry(QRect(340, 130, 181, 24));
         MainWindow->setCentralWidget(centralwidget);
         statusbar = new QStatusBar(MainWindow);
         statusbar->setObjectName("statusbar");
@@ -91,6 +97,9 @@ public:
         CityList->setItemText(1, QCoreApplication::translate("MainWindow", "Cairo", nullptr));
         CityList->setItemText(2, QCoreApplication::translate("MainWindow", "Alexandria", nullptr));
         CityList->setItemText(3, QCoreApplication::translate("MainWindow", "Hurgada", nullptr));
+
+        CityList_2->setItemText(0, QCoreApplication::translate("MainWindow", "Celsius", nullptr));
+        CityList_2->setItemText(1, QCoreApplication::translate("MainWindow", "Fahrenheit", nullptr));
 
     } // retranslateUi
 

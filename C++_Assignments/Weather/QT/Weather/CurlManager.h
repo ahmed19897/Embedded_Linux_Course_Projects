@@ -54,6 +54,10 @@ public:
     {
         APIObject->ChangeCity(newcity);
     }
+    void ChangeUnits(int newunit)
+    {
+        APIObject->ChangeUnits(newunit);
+    }
 
 private:
     std::shared_ptr< IAPI>  APIObject;

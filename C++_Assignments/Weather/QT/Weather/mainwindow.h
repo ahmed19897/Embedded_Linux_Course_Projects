@@ -22,11 +22,13 @@ public:
 private slots:
     void on_WeatherButton_clicked();
     void on_CityList_currentTextChanged(const QString &arg1);
+    void on_CityList_2_currentIndexChanged(int index);
 
 private:
     Ui::MainWindow *ui;
     CurlManager MyCurlManager;
     QString City;
+    int unitindex;
 
 };
 #endif // MAINWINDOW_H

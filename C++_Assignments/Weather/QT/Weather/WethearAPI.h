@@ -17,6 +17,8 @@ public:
     void SetUrl(void) ;
     std::string GetUrl(void) ;
     void ChangeCity(std::string&) ;
+    void ChangeUnits(int newunit) ;
+    void ChangeLang(int newlang) ;
 private:
     static std::shared_ptr<WethearAPI> instance;
 
