@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="rExg_zcg5R6rUQa33ath" name="Page-1">
-        <mxGraphModel dx="6564" dy="3372" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="2774" dy="1668" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -49,7 +49,7 @@
                 <mxCell id="28" value="&lt;br style=&quot;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;div style=&quot;line-height: 19px;&quot;&gt;&lt;div style=&quot;&quot;&gt;+virtual void SetUrl()=0&lt;/div&gt;&lt;div style=&quot;&quot;&gt;+ virtual GetUrl(void)&amp;nbsp;std::string =0&lt;/div&gt;&lt;div style=&quot;&quot;&gt;+void ChangeCity(std::string&amp;amp;)=0&lt;/div&gt;&lt;div style=&quot;&quot;&gt;+void ChangeUnits(int units)=0&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontFamily=Verdana;fontColor=#F0F0F0;fontSize=23;strokeWidth=1;" parent="26" vertex="1">
                     <mxGeometry y="30" width="640" height="170" as="geometry"/>
                 </mxCell>
-                <mxCell id="29" style="edgeStyle=none;html=1;entryX=-0.004;entryY=0.034;entryDx=0;entryDy=0;endArrow=diamond;endFill=1;endSize=19;fontSize=23;strokeWidth=8;entryPerimeter=0;exitX=1.006;exitY=0.106;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" target="9" edge="1" source="32">
+                <mxCell id="29" style="edgeStyle=none;html=1;entryX=-0.004;entryY=0.034;entryDx=0;entryDy=0;endArrow=diamond;endFill=1;endSize=19;fontSize=23;strokeWidth=8;entryPerimeter=0;exitX=1.006;exitY=0.106;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="32" target="9" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="80" y="-170" as="sourcePoint"/>
                         <mxPoint x="244.72000000000003" y="-175" as="targetPoint"/>
