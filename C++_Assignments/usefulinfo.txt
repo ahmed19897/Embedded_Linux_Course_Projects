@@ -6,3 +6,9 @@ struct access level is public by default while class is private by default
 
 String str("ABC") -> lvalue  //use normal reference to capture the value
 String("DEF")     -> rvalue //use movesemantics to capture the value
+
+using explicit in the constructor prevent the compiler making the 1 convcersion to resolve the type to a function that is normally alowed , by preventing the compiler from being able to do the conversion we make sure the constructor can only be called with the type that it is supposed to have
+
+using noexcept prevent a function from throwing an exception
+
+using constexper allow the number to be const by the evaluation is performed at compile time
